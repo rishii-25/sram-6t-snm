@@ -1,0 +1,18 @@
+* 6T SRAM
+.include ../models/ptm_45nm_hp.pm
+.option temp=27.0
+Vdd vdd 0 1.0
+Vin in 0 0
+Vwl wl 0 1.0
+Vbl bl 0 1.0
+MPU2 out in vdd vdd pmos W=9.0000e-08 L=4.5000e-08 delvto=0.00000 mulu0=1.0000
+MPD2 out in 0 0 nmos W=1.8000e-07 L=4.5000e-08 delvto=0.00000 mulu0=1.0000
+MAX2 bl wl out 0 nmos W=9.0000e-08 L=4.5000e-08 delvto=0.00000 mulu0=1.0000
+.control
+set wr_singlescale
+set wr_vecnames
+dc Vin 0 1.0 0.002
+wrdata vtc_read.txt v(out)
+quit
+.endc
+.end

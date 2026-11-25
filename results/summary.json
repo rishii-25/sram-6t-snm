@@ -1,0 +1,107 @@
+{
+  "nominal_TT_1V0": {
+    "hold": 0.33025508682919674,
+    "read": 0.1765299325715566
+  },
+  "TT_1V0": {
+    "hold_snm": 330.3,
+    "read_snm": 176.5,
+    "write_margin": 301.6
+  },
+  "worst_corner_at_1V0": {
+    "hold_snm": {
+      "corner": "FS",
+      "mV": 297.7
+    },
+    "read_snm": {
+      "corner": "FS",
+      "mV": 135.6
+    },
+    "write_margin": {
+      "corner": "SF",
+      "mV": 226.8
+    }
+  },
+  "temperature_TT_1V0_mV": {
+    "-40C": {
+      "hold_snm": 352.8,
+      "read_snm": 211.2,
+      "write_margin": 234.8
+    },
+    "0C": {
+      "hold_snm": 338.3,
+      "read_snm": 189.0,
+      "write_margin": 281.8
+    },
+    "27C": {
+      "hold_snm": 330.3,
+      "read_snm": 176.5,
+      "write_margin": 301.6
+    },
+    "85C": {
+      "hold_snm": 315.5,
+      "read_snm": 154.4,
+      "write_margin": 326.8
+    },
+    "125C": {
+      "hold_snm": 306.2,
+      "read_snm": 141.5,
+      "write_margin": 338.9
+    }
+  },
+  "sigma_vth_mV": {
+    "PD": 22.22,
+    "AX": 31.43,
+    "PU": 31.43
+  },
+  "monte_carlo": {
+    "0.7V": {
+      "read_snm": {
+        "mean_mV": 103.0,
+        "std_mV": 13.86,
+        "mu_over_sigma": 7.43,
+        "min_mV": 51.9,
+        "fails": 0
+      },
+      "write_margin": {
+        "mean_mV": 204.4,
+        "std_mV": 33.72,
+        "mu_over_sigma": 6.06,
+        "min_mV": 103.5,
+        "fails": 0
+      },
+      "hold_snm": {
+        "mean_mV": 229.4,
+        "std_mV": 11.86,
+        "mu_over_sigma": 19.34,
+        "min_mV": 191.2,
+        "fails": 0
+      }
+    },
+    "1.0V": {
+      "read_snm": {
+        "mean_mV": 162.3,
+        "std_mV": 13.56,
+        "mu_over_sigma": 11.97,
+        "min_mV": 104.4,
+        "fails": 0
+      },
+      "write_margin": {
+        "mean_mV": 301.7,
+        "std_mV": 34.67,
+        "mu_over_sigma": 8.7,
+        "min_mV": 193.9,
+        "fails": 0
+      },
+      "hold_snm": {
+        "mean_mV": 317.6,
+        "std_mV": 11.82,
+        "mu_over_sigma": 26.88,
+        "min_mV": 264.2,
+        "fails": 0
+      }
+    }
+  },
+  "mc_samples_per_vdd": 1000,
+  "runtime_s": 236.4
+}
